@@ -4,12 +4,23 @@ Una app web sencilla para mejorar tu léxico en **español e inglés** sin que p
 
 ## Cómo funciona
 
-- **Hoy**: 5 palabras nuevas al día (3 en español + 2 en inglés). Primero intentas adivinar qué significan; después ves el significado, la traducción, un ejemplo, palabras cercanas, una curiosidad y un **«sube de nivel»** (frase normal → frase mejorada).
-- **Reto**: escribes una frase tuya con la palabra. Así no solo la reconoces: la usas.
-- **Practicar**: preguntas rápidas de 4 tipos (definición, completar la frase, traducción y «¿qué palabra usarías?»).
-- **Repaso espaciado**: cada palabra está en una caja del 1 al 5. Si aciertas sube de caja y tarda más en volver (1, 3, 7, 14 y 30 días); si fallas, vuelve a la caja 1.
-- **Mi léxico**: todas las palabras que has aprendido, con su nivel y tus frases.
-- Racha de días 🔥, pronunciación 🔊 y modo oscuro automático.
+Cada día aprendes 5 palabras (3 en español + 2 en inglés). Cada palabra pasa por 5 pasos, y cada paso aplica una técnica de aprendizaje:
+
+| Paso | Qué haces | Técnica |
+|---|---|---|
+| 1. Adivina | Lees la palabra en una frase y eliges qué crees que significa | Efecto de generación |
+| 2. Descubre | Significado, traducción, ejemplo, «sube de nivel», origen, audio y enlace a la RAE / Cambridge | Codificación múltiple |
+| 3. Ancla | Creas tu propio gancho de memoria (sonido, imagen, persona) | Palabra clave / mnemotecnia |
+| 4. Úsala | Escribes una frase tuya con la palabra | Uso activo |
+| 5. Valora | Dices lo bien que la sabes y eso decide cuándo vuelve | Metacognición |
+
+**Practicar** tiene tres modos:
+
+- **Repaso inteligente**: repetición espaciada (cajas de 1, 3, 7, 14 y 30 días, como Anki) y recuerdo activo (escribir la palabra, con pistas). Tras cada acierto valoras Difícil / Bien / Fácil; lo que fallas vuelve en la misma sesión.
+- **Contrarreloj**: 60 segundos con combos que multiplican los puntos.
+- **Parejas**: une palabras con su traducción contra el reloj.
+
+Además: puntos de experiencia y niveles, racha de días, **Mi léxico** (con tus ganchos, frases y fecha del próximo repaso) y una pestaña **Método** que explica cada técnica.
 
 El progreso se guarda en el navegador (`localStorage`). No necesita servidor ni instalación.
 

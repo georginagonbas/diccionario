@@ -19,6 +19,7 @@
     <div class="stats" aria-label="Tu progreso">
       <span class="stat" title="Días seguidos"><span aria-hidden="true">🔥</span> <b id="streak">0</b></span>
       <span class="stat" title="Palabras aprendidas"><span aria-hidden="true">📚</span> <b id="learned">0</b></span>
+      <span class="stat level-stat" id="level-stat"><span aria-hidden="true">⭐</span> Nv <b id="level">1</b><span class="xp"><span id="xpbar"></span></span></span>
     </div>
   </header>
 
@@ -26,9 +27,11 @@
     <button role="tab" data-view="today" class="active">Hoy</button>
     <button role="tab" data-view="practice">Practicar</button>
     <button role="tab" data-view="lexicon">Mi léxico</button>
+    <button role="tab" data-view="method">Método</button>
   </nav>
 
   <main id="app"></main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <footer class="foot">
     Tu progreso se guarda en este navegador.
