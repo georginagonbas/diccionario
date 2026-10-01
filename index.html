@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diccionario vivo</title>
+  <meta name="description" content="Aprende 5 palabras al día en español e inglés y empieza a usarlas.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">Aa</span>
+      <div>
+        <h1>Diccionario vivo</h1>
+        <p class="subtitle">Palabras que de verdad vas a usar</p>
+      </div>
+    </div>
+    <div class="stats" aria-label="Tu progreso">
+      <span class="stat" title="Días seguidos"><span aria-hidden="true">🔥</span> <b id="streak">0</b></span>
+      <span class="stat" title="Palabras aprendidas"><span aria-hidden="true">📚</span> <b id="learned">0</b></span>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-view="today" class="active">Hoy</button>
+    <button role="tab" data-view="practice">Practicar</button>
+    <button role="tab" data-view="lexicon">Mi léxico</button>
+  </nav>
+
+  <main id="app"></main>
+
+  <footer class="foot">
+    Tu progreso se guarda en este navegador.
+    <button id="reset" class="link">Reiniciar progreso</button>
+  </footer>
+
+  <script src="js/words.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
