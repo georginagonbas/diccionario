@@ -422,8 +422,18 @@ function updateStats() {
 }
 
 document.querySelectorAll(".tabs button").forEach(b => (b.onclick = () => show(b.dataset.view)));
-document.getElementById("reset").onclick = () => {
-  if (!confirm("¿Seguro que quieres borrar todo tu progreso?")) return;
+// Confirmación en dos clics (algunos visores bloquean confirm()).
+const $reset = document.getElementById("reset");
+let resetArmed = false;
+$reset.onclick = () => {
+  if (!resetArmed) {
+    resetArmed = true;
+    $reset.textContent = "¿Seguro? Pulsa otra vez para borrar todo";
+    setTimeout(() => { resetArmed = false; $reset.textContent = "Reiniciar progreso"; }, 4000);
+    return;
+  }
+  resetArmed = false;
+  $reset.textContent = "Reiniciar progreso";
   state = freshState();
   quiz = null;
   save();
